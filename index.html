@@ -73,10 +73,13 @@
 	      <form action="">
           <label for="fname">Name</label>
           <input type="text" name="fname" id="fname">
-          
+          <label for="email">Email</label>
           <input type="email" name="email" id="email">
           <input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" title="This field is for validation and should not be changed">
-          <input type="submit" name="submit" id="submit" value="Submit">
+          <script>
+jQuery( document ).ready( function(){ document.getElementById('jetpack-source_f_name').value = '' });
+</script>
+		      <input type="submit" name="submit" id="submit" value="Submit">
       </form>
        
 	<!--Plug-in Initialisation-->
